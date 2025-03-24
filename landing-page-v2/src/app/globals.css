@@ -1,0 +1,134 @@
+
+@keyframes slide {
+   0%, 20% { transform: translateX(0); }
+   25%, 45% { transform: translateX(-100%); }
+   50%, 70% { transform: translateX(-200%); }
+   75%, 95% { transform: translateX(-300%); }
+   100% { transform: translateX(0); }
+}
+
+
+@keyframes moveText {
+   0% {
+       transform: translateX(0);
+   }
+   100% {
+       transform: translateX(10px); /* Ajuste o valor para mais ou menos movimento */
+   }
+}
+
+@keyframes rgb-border {
+   0% {
+     
+     border-color: rgb(0, 8, 4); /* Cor inicial da borda */
+   }
+   25% {
+     border-color: rgb(237, 237, 241); /* Muda para azul */
+   }
+   50% {
+     
+     border-color: rgb(172, 238, 178); /* Muda para vermelho */
+   }
+   75% {
+     border-color: rgb(12, 197, 40); /* Muda para amarelo */
+   }
+   100% {
+     
+     border-color: rgb(4, 0, 7); /* Volta para a cor inicial */
+   }
+ }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition: all 1.0s;
+
+  }
+  
+ body{
+    background: linear-gradient(to right, #000000, #231D6A);
+    height: 200vh;
+    width: 100%;
+ }
+ .container-menu{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+ }
+
+ .titles{
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid  rgb(246, 252, 195);
+  
+ }
+
+ .titles h1{
+  color: rgb(246, 252, 195);
+  font-family: monoton;
+  letter-spacing: 1rem;
+ }
+
+ .titles p{
+  color: rgb(246, 252, 195);
+  font-weight:300;
+  letter-spacing: 0.4rem;
+  font-family: montserrat ;
+  margin-bottom: 0.2rem;
+ }
+
+ span{
+  color: rgb(147, 14, 248);
+ }
+
+
+.menu{
+  position: fixed;
+  text-align: right;
+  display: flex;
+  margin-top: 0.2rem;
+  
+  
+}
+.menu a{
+  padding: 0.4rem;
+  margin: 0.2rem;
+  
+  
+}
+
+.menu ul{
+  gap: 1rem;
+  flex-direction: column;
+  padding: 0.5rem;
+  display: flex;
+  margin-top: 0.4rem;
+  list-style: none;
+  
+}
+
+.main-container{
+  font-size: small;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.main-title{
+  font-family: monoton;
+  color: rgb(246, 252, 195);
+  letter-spacing: 0.4rem;
+}
+
+.main-text{
+  
+  font-family: montserrat;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+}
