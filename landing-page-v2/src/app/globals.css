@@ -89,28 +89,30 @@
 
 .menu{
   position: fixed;
-  text-align: right;
-  display: flex;
+  text-align: left;
   margin-top: 0.2rem;
-  
-  
-}
-.menu a{
-  padding: 0.4rem;
-  margin: 0.2rem;
-  
-  
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem;
 }
 
-.menu ul{
-  gap: 1rem;
-  flex-direction: column;
-  padding: 0.5rem;
-  display: flex;
-  margin-top: 0.4rem;
-  list-style: none;
-  
+.menu-buttom{
+  color: rgb(246, 252, 195);
 }
+
+
+.menu-items a{
+  display: block;
+}
+.menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(243, 3, 3);}
+
+
+  .menu a:hover{
+    transform: scale(1.4);
+  }
 
 .main-container{
   font-size: small;

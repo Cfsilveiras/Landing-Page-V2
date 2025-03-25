@@ -30,28 +30,20 @@ export default function Home(){
 
 
     <nav className="menu">
-        <ul>
-          <li>
+      <p className="menu-buttom">MENU</p>
+        <div className="menu-items">
             <a href="https://www.linkedin.com/in/devfilipesilveira/" target="_blank">
             <Icon name="bx bxl-linkedin" size="24px" />
             </a>
-          </li>
-          <li>
             <a href="#home">
             <Icon name="bx-home" size="24px" />
-
             </a>
-          </li>
-          <li>
+            
             <a href="https://github.com/Cfsilveiras" target="_blank">
               <Icon name="bx bxl-github" size="24px" />
-            </a>
-          </li>
-        </ul>
-      </nav>
-Transformar esse menu em um componente que abre e fecha, como um menu deslizante, ao clicar no ícone de menu.
-
-
+              </a>
+          </div>
+</nav>
     <section className="main-container">
       <h2 className="main-title">About me</h2>
       <p className="main-text">
